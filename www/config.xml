@@ -4,7 +4,7 @@
 	xmlns = "http://www.w3.org/ns/widgets"
 	xmlns:gap = "http://phonegap.com/ns/1.0"
 	id = "com.isti115.circletest"
-	version = "0.0.1"
+	version = "0.0.3"
 	>
 
 	<name>Circle Test</name>

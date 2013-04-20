@@ -66,13 +66,26 @@ function drawCircles(x, y)
 	context.clearRect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
 	
 	context.beginPath();
-	
+	context.strokeStyle = "#ff0000";
 	context.arc(x, y, 10, 0, 2 * Math.PI);
-	context.arc(SCREEN_WIDTH - x, y, 10, 0, 2 * Math.PI);
-	context.arc(x, SCREEN_HEIGHT - y, 10, 0, 2 * Math.PI);
-	context.arc(SCREEN_WIDTH - x, SCREEN_HEIGHT - y, 10, 0, 2 * Math.PI);
-	
+	context.stroke();
 	context.closePath();
 	
+	context.beginPath();
+	context.strokeStyle = "#ffff00";
+	context.arc(SCREEN_WIDTH - x, y, 10, 0, 2 * Math.PI);
 	context.stroke();
+	context.closePath();
+	
+	context.beginPath();
+	context.strokeStyle = "#00ff00";
+	context.arc(x, SCREEN_HEIGHT - y, 10, 0, 2 * Math.PI);
+	context.stroke();
+	context.closePath();
+	
+	context.beginPath();
+	context.strokeStyle = "#0000ff";
+	context.arc(SCREEN_WIDTH - x, SCREEN_HEIGHT - y, 10, 0, 2 * Math.PI);
+	context.stroke();
+	context.closePath();
 }
