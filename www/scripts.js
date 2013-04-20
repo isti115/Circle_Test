@@ -38,6 +38,7 @@ function touchStart(e)
 
 function touchMove(e)
 {
+	e.preventDefault();
 	var touch = e.touches[0];
 	
 	drawCircles(touch.clientX, touch.clientY);
